@@ -15,7 +15,11 @@ jobs:
           username: ${{ secrets.mn120 }}
           password: ${{ secrets.IucipZa2Zg74 }}
 <<<<<<< HEAD
+<<<<<<< HEAD
           repository: ${{ mn120/3120-project4 }}
+=======
+          repository: ${{ env.mn120/3120-project4 }}
+>>>>>>> parent of 52bf235 (Delete docker-image0.yml)
 =======
           repository: ${{ env.mn120/3120-project4 }}
 >>>>>>> parent of 52bf235 (Delete docker-image0.yml)
