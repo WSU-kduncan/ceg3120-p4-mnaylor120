@@ -14,5 +14,5 @@ jobs:
         with:
           username: ${{ secrets.mn120 }}
           password: ${{ secrets.IucipZa2Zg74 }}
-          repository: ${{ env.mn120/3120-project4 }}
+          repository: ${{ mn120/3120-project4 }}
           tag_with_ref: true
