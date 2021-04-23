@@ -1,0 +1,27 @@
+### Documentation requirements using DockerHub
+- Create `README.md` in main folder of your repo that details the following:
+    - Project Overview
+      - This project is usuing Docker to host a public repository that is running in a container all within Git workflows  
+    - Run Project Locally  
+        - how you installed docker + dependencies (WSL2, for example)  
+          - Install docker desktop via: https://www.docker.com/products/docker-desktop  
+          - Install docker on linux    
+          - Create public Docker repo by creating an account and hitting the create repo button and setting it to public    
+            
+        - how to build the container
+          - Once you .json file is available you can do something like this ` docker build -t getting-started .`    
+        - how to run the container    
+          - ` docker run -dp 3000:3000 getting-started` be sure to run on the port that you desire     
+        - how to view the project (open a browser...go to ip and port...)   
+          -  Go to a browser and search to 127.0.0.1 (home) with a colon to the port that you need to go to. So for the above   example it would be `127.0.0.1:3000
+    - Create DockerHub public repo  
+        - process to create   
+          - Create account then navigate to repo menu then select new repo and create while making sure you have selected public     
+    - Configure GitHub Secrets   
+        - what credentials are needed - DockerHub credentials (do not state your credentials)  
+          - Docker username, Docker password, Docker reponame
+        - set secrets and secret names  
+          - navigate to the image.yml file and change accordingly   
+    - Configure GitHub Workflow
+        - variables to change (repository, etc.) 
+          - Ensure that you have selected the correct workflow, then you have to configure the .yml file  to include the appropriate credentials listed above... then commit to repo
