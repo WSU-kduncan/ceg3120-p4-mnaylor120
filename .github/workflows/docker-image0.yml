@@ -14,5 +14,9 @@ jobs:
         with:
           username: ${{ secrets.mn120 }}
           password: ${{ secrets.IucipZa2Zg74 }}
+<<<<<<< HEAD
           repository: ${{ mn120/3120-project4 }}
+=======
+          repository: ${{ env.mn120/3120-project4 }}
+>>>>>>> parent of 52bf235 (Delete docker-image0.yml)
           tag_with_ref: true
